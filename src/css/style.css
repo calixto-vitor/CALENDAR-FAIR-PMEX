@@ -90,13 +90,19 @@ img {
 
 .tab button {
   background-color: inherit;
-  width: 50px;
+  width: 8.3%;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 10px;
   transition: 0.3s;
+}
+
+@media (max-width: 426px) {
+  .tab button {
+    width: 16.6%;
+  }
 }
 
 .tab button:hover {
