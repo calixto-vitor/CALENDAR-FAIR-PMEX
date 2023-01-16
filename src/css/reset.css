@@ -9,3 +9,7 @@ html {
   font-family: "Outfit", sans-serif;
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 1px;
+}
