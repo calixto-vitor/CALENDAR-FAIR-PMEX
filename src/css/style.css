@@ -69,7 +69,8 @@ i:hover {
 }
 
 img {
-  width: 40px;
+  width: 18vw;
+  max-width: 90px;
 }
 
 .calendar {
@@ -82,7 +83,8 @@ img {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  max-width: 610px;
+  min-width: 50vw;
+  max-width: 1000px;
   font-weight: 300;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
