@@ -8,17 +8,20 @@
 
 .mpf {
   background-color: darkblue;
-  width: 30px;
+  width: 13vw;
+  max-width: 60px;
 }
 
 .la {
   background-color: orangered;
-  width: 30px;
+  width: 13vw;
+  max-width: 60px;
 }
 
 .vr {
   background-color: red;
-  width: 30px;
+  width: 13vw;
+  max-width: 60px;
 }
 
 .tlm {
@@ -27,5 +30,6 @@
 
 .tls {
   background-color: palevioletred;
-  width: 30px;
+  width: 13vw;
+  max-width: 60px;
 }
