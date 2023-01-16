@@ -118,7 +118,8 @@ img {
 .tabcontent {
   display: none;
   background-color: #f1f1f1;
-  max-width: 610px;
+  min-width: 50vw;
+  max-width: 1000px;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
