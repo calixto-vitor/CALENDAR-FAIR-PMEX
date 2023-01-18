@@ -111,7 +111,8 @@ img {
   background-color: #ddd;
 }
 
-.tab button.active {
+.tab button:active,
+.tab button:focus  {
   background-color: #ccc;
 }
 
