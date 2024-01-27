@@ -9,27 +9,25 @@
     <link
       rel="shortcut icon"
       href="./src/images/pmex.png"
-      type="image/x-icon"
-    />
+      type="image/x-icon" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/label.css" />
+    <link rel="stylesheet" href="src/css/accordion.css" />
   </head>
   <body>
     <header class="header">
@@ -55,489 +53,794 @@
       <div class="calendar">
         <div class="tab">
           <button class="tablinks" onclick="openTab(event, 'Jan')">Jan</button>
-          <button class="tablinks" onclick="openTab(event, 'Fev')">Fev</button>
+          <button class="tablinks" onclick="openTab(event, 'Fev')">Feb</button>
           <button class="tablinks" onclick="openTab(event, 'Mar')">Mar</button>
-          <button class="tablinks" onclick="openTab(event, 'Abr')">Abr</button>
-          <button class="tablinks" onclick="openTab(event, 'Mai')">Mai</button>
+          <button class="tablinks" onclick="openTab(event, 'Abr')">Apr</button>
+          <button class="tablinks" onclick="openTab(event, 'Mai')">May</button>
           <button class="tablinks" onclick="openTab(event, 'Jun')">Jun</button>
           <button class="tablinks" onclick="openTab(event, 'Jul')">Jul</button>
-          <button class="tablinks" onclick="openTab(event, 'Ago')">Ago</button>
-          <button class="tablinks" onclick="openTab(event, 'Set')">Set</button>
-          <button class="tablinks" onclick="openTab(event, 'Out')">Out</button>
+          <button class="tablinks" onclick="openTab(event, 'Ago')">Aug</button>
+          <button class="tablinks" onclick="openTab(event, 'Set')">Sep</button>
+          <button class="tablinks" onclick="openTab(event, 'Out')">Oct</button>
           <button class="tablinks" onclick="openTab(event, 'Nov')">Nov</button>
           <button class="tablinks" onclick="openTab(event, 'Dez')">Dez</button>
         </div>
 
         <div id="Jan" class="tabcontent">
           <h2>January</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/lance.png" alt="" />
-          <img class="pf" src="./src/images/pf/cynthia.png" alt="" />
-          <h3>2021</h3>
-          <img class="pf" src="./src/images/pf/n.png" alt="" />
-          <h3>2022</h3>
-          <img class="mf" src="./src/images/mf/ssrcynthia.png" alt="" />
-          <img class="pf" src="./src/images/pf/lucas.png" alt="" />
-          <img class="la" src="./src/images/pf/ssred.png" alt="" />
-          <img class="la" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="la" src="./src/images/pf/alder.png" alt="" />
-          <h3>2023</h3>
-          <img class="pf" src="./src/images/pf/ssdiantha.png" alt="" />
-          <img class="la" src="./src/images/pf/diantha.png" alt="" />
-          <img class="la" src="./src/images/pf/gloria.png" alt="" />
-          <img class="la" src="./src/images/pf/championiris.png" alt="" />
-          <img class="pf" src="./src/images/pf/bede.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-					<h3>2024</h3>
-					<img class="mf" src="./src/images/mf/ssacynthia.png" alt="" />
-					<img class="mf" src="./src/images/mf/sstred.png" alt="" />
-					<img class="mpf" src="./src/images/pf/victor.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssleaf.png" alt="" />
-          <img class="pf" src="./src/images/pf/iono.png" alt="" />
-					<img class="mpf" src="./src/images/pf/ssleon.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lucas.png" alt="" />
-          <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
-          <img class="pf" src="./src/images/pf/grusha.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/leon.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/lance.png" alt="" />
+                <img class="pf" src="./src/images/pf/cynthia.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/n.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/ssrcynthia.png" alt="" />
+                <img class="pf" src="./src/images/pf/lucas.png" alt="" />
+                <img class="la" src="./src/images/pf/ssred.png" alt="" />
+                <img class="la" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="la" src="./src/images/pf/alder.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/ssdiantha.png" alt="" />
+                <img class="la" src="./src/images/pf/diantha.png" alt="" />
+                <img class="la" src="./src/images/pf/gloria.png" alt="" />
+                <img class="la" src="./src/images/pf/championiris.png" alt="" />
+                <img class="pf" src="./src/images/pf/bede.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/ssacynthia.png" alt="" />
+                <img class="mf" src="./src/images/mf/sstred.png" alt="" />
+                <img class="mpf" src="./src/images/pf/victor.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssleaf.png" alt="" />
+                <img class="pf" src="./src/images/pf/iono.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssleon.png" alt="" />
+                <img class="mpf" src="./src/images/pf/lucas.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
+                <img class="pf" src="./src/images/pf/grusha.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/leon.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Fev" class="tabcontent">
           <h2>February</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/steven.png" alt="" />
-          <h3>2021</h3>
-          <img class="pf" src="./src/images/pf/lysander.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lance.png" alt="" />
-          <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
-          <h3>2022</h3>
-          <img class="pf" src="./src/images/pf/sscyrus.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssdawn.png" alt="" />
-          <img class="mpf" src="./src/images/pf/redsnorlax.png" alt="" />
-          <img class="mpf" src="./src/images/pf/blueclassic.png" alt="" />
-          <h3>2023</h3>
-          <img class="pf" src="./src/images/pf/sslysandre.png" alt="" />
-          <img class="pf" src="./src/images/pf/anabel.png" alt="" />
-          <img class="pf" src="./src/images/pf/emma.png" alt="" />
-          <img class="mf" src="./src/images/mf/leon.png" alt="" />
-          <img class="pf" src="./src/images/pf/marnie.png" alt="" />
-          <br />
-          <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="mpf" src="./src/images/pf/championiris.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lance.png" alt="" />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <img class="mpf" src="./src/images/pf/alder.png" alt="" />
-          <img class="mpf" src="./src/images/pf/steven.png" alt="" />
-          <img class="mpf" src="./src/images/pf/diantha.png" alt="" />
-          <h5>5٭ Champion Select Ticket Scout (F2P)</h5>
-          <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="mpf" src="./src/images/pf/championiris.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lance.png" alt="" />
-          <img class="mpf" src="./src/images/pf/alder.png" alt="" />
-          <img class="mpf" src="./src/images/pf/steven.png" alt="" />
-          <img class="mpf" src="./src/images/pf/diantha.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/lysander.png" alt="" />
+                <img class="mpf" src="./src/images/pf/lance.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/sscyrus.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssdawn.png" alt="" />
+                <img class="mpf" src="./src/images/pf/redsnorlax.png" alt="" />
+                <img class="mpf" src="./src/images/pf/blueclassic.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/sslysandre.png" alt="" />
+                <img class="pf" src="./src/images/pf/anabel.png" alt="" />
+                <img class="pf" src="./src/images/pf/emma.png" alt="" />
+                <img class="mf" src="./src/images/mf/leon.png" alt="" />
+                <img class="pf" src="./src/images/pf/marnie.png" alt="" />
+                <br />
+                <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
+                <img
+                  class="mpf"
+                  src="./src/images/pf/championiris.png"
+                  alt="" />
+                <img class="mpf" src="./src/images/pf/lance.png" alt="" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="mpf" src="./src/images/pf/alder.png" alt="" />
+                <img class="mpf" src="./src/images/pf/steven.png" alt="" />
+                <img class="mpf" src="./src/images/pf/diantha.png" alt="" />
+                <h5>5٭ Champion Select Ticket Scout (F2P)</h5>
+                <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
+                <img
+                  class="mpf"
+                  src="./src/images/pf/championiris.png"
+                  alt="" />
+                <img class="mpf" src="./src/images/pf/lance.png" alt="" />
+                <img class="mpf" src="./src/images/pf/alder.png" alt="" />
+                <img class="mpf" src="./src/images/pf/steven.png" alt="" />
+                <img class="mpf" src="./src/images/pf/diantha.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>EM BREVE...</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Mar" class="tabcontent">
           <h2>March</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/ssred.png" alt="" />
-          <h3>2021</h3>
-          <img class="mf" src="./src/images/mf/leon.png" alt="" />
-          <img class="pf" src="./src/images/pf/marnie.png" alt="" />
-          <img class="pf" src="./src/images/pf/gloria.png" alt="" />
-          <img class="pf" src="./src/images/pf/championiris.png" alt="" />
-          <img class="pf" src="./src/images/pf/diantha.png" alt="" />
-          <h3>2022</h3>
-          <h5>1st Update</h5>
-          <img class="pf" src="./src/images/pf/mayanni22.png" alt="" />
-          <img class="pf" src="./src/images/pf/skylaanni22.png" alt="" />
-          <img class="pf" src="./src/images/pf/raihananni22.png" alt="" />
-          <img class="pf" src="./src/images/pf/championiris.png" alt="" />
-          <img class="mpf" src="./src/images/pf/n.png" alt="" />
-          <img class="mpf" src="./src/images/pf/steven.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lance.png" alt="" />
-          <h5>2nd Update</h5>
-          <img class="mf" src="./src/images/mf/ssserena.png" alt="" />
-          <img class="la" src="./src/images/pf/diantha.png" alt="" />
-          <img class="la" src="./src/images/pf/ingo.png" alt="" />
-          <img class="la" src="./src/images/pf/redsnorlax.png" alt="" />
-          <h5>Victory Road - F2P</h5>
-          <img class="vr" src="./src/images/pf/ssred.png" alt="" />
-          <img class="vr" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="vr" src="./src/images/pf/ssleaf.png" alt="" />
-          <h3>2023</h3>
-          <img class="mf" src="./src/images/mf/neochampmarnie.png" alt="" />
-          <img class="mf" src="./src/images/mf/neochamphop.png" alt="" />
-          <img class="mf" src="./src/images/mf/neochampbede.png" alt="" />
-          <img class="mpf" src="./src/images/pf/raihananni22.png" alt="" />
-          <img class="mpf" src="./src/images/pf/redsnorlax.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lucas.png" alt="" />
-          <img class="la" src="./src/images/pf/sscynthia.png" alt="" />
-          <img class="la" src="./src/images/pf/emmet.png" alt="" />
-          <img class="la" src="./src/images/pf/lysander.png" alt="" />
-          <img class="pf" src="./src/images/pf/lance.png" alt="" />
-          <img class="mpf" src="./src/images/pf/mayanni22.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssbrendan.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/gloria.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020 - 0.5 YEARS</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/ssred.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021 - 1.5 YEARS</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/leon.png" alt="" />
+                <img class="pf" src="./src/images/pf/marnie.png" alt="" />
+                <img class="pf" src="./src/images/pf/gloria.png" alt="" />
+                <img class="pf" src="./src/images/pf/championiris.png" alt="" />
+                <img class="pf" src="./src/images/pf/diantha.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022 - 2.5 YEARS</h2></div>
+              <div class="accordion-content">
+                <h5>1st Update</h5>
+                <img class="pf" src="./src/images/pf/mayanni22.png" alt="" />
+                <img class="pf" src="./src/images/pf/skylaanni22.png" alt="" />
+                <img class="pf" src="./src/images/pf/raihananni22.png" alt="" />
+                <img class="pf" src="./src/images/pf/championiris.png" alt="" />
+                <img class="mpf" src="./src/images/pf/n.png" alt="" />
+                <img class="mpf" src="./src/images/pf/steven.png" alt="" />
+                <img class="mpf" src="./src/images/pf/lance.png" alt="" />
+                <h5>2nd Update</h5>
+                <img class="mf" src="./src/images/mf/ssserena.png" alt="" />
+                <img class="la" src="./src/images/pf/diantha.png" alt="" />
+                <img class="la" src="./src/images/pf/ingo.png" alt="" />
+                <img class="la" src="./src/images/pf/redsnorlax.png" alt="" />
+                <h5>Victory Road - F2P</h5>
+                <img class="vr" src="./src/images/pf/ssred.png" alt="" />
+                <img class="vr" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="vr" src="./src/images/pf/ssleaf.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023 - 3.5 YEARS</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/neochampmarnie.png" alt="" />
+                <img class="mf" src="./src/images/mf/neochamphop.png" alt="" />
+                <img class="mf" src="./src/images/mf/neochampbede.png" alt="" />
+								<img class="mpf" src="./src/images/pf/raihananni22.png" alt="" />
+                <img class="mpf" src="./src/images/pf/redsnorlax.png" alt="" />
+                <img class="mpf" src="./src/images/pf/lucas.png" alt="" />
+                <img class="la" src="./src/images/pf/sscynthia.png" alt="" />
+                <img class="la" src="./src/images/pf/emmet.png" alt="" />
+                <img class="la" src="./src/images/pf/lysander.png" alt="" />
+                <img class="pf" src="./src/images/pf/lance.png" alt="" />
+                <img class="mpf" src="./src/images/pf/mayanni22.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssbrendan.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/gloria.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024 - 4.5 YEARS</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Abr" class="tabcontent">
           <h2>April</h2>
-          <h3>2020</h3>
-          <h3>2021</h3>
-          <img class="pf" src="./src/images/pf/n.png" alt="" />
-          <h3>2022</h3>
-          <h3>2023</h3>
-          <img class="pf" src="./src/images/pf/victor.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/sslusamine.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/steven.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020*</h2></div>
+              <div class="accordion-content">
+                <h3>NOTHING...</h3>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/n.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022*</h2></div>
+              <div class="accordion-content">
+                <h3>NOTHING...</h3>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/victor.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/sslusamine.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/steven.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
+          <h3>*NO NEW POKÉ FAIR AND/OR MASTER FAIR OR RERUN!</h3>
         </div>
 
         <div id="Mai" class="tabcontent">
           <h2>May</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/cynthia.png" alt="" />
-          <h3>2021</h3>
-          <img class="pf" src="./src/images/pf/raihan.png" alt="" />
-          <img class="pf" src="./src/images/pf/alder.png" alt="" />
-          <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="mpf" src="./src/images/pf/steven.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lance.png" alt="" />
-          <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
-          <h3>2022</h3>
-          <img class="pf" src="./src/images/pf/ssmorty.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssgiovanni.png" alt="" />
-          <img class="la" src="./src/images/pf/n.png" alt="" />
-          <img class="la" src="./src/images/pf/gloria.png" alt="" />
-          <img class="la" src="./src/images/pf/sscynthia.png" alt="" />
-					<h3>2023</h3>
-          <img class="pf" src="./src/images/pf/sshau.png" alt="" />
-					<img class="pf" src="./src/images/pf/ssmina.png" alt="" />
-					<img class="pf" src="./src/images/pf/ssacerola.png" alt="" />
-					<img class="pf" src="./src/images/pf/sslana.png" alt="" />
-					<img class="la" src="./src/images/pf/ssred.png" alt="" />
-          <img class="la" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="la" src="./src/images/pf/alder.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/ssrcynthia.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/cynthia.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/raihan.png" alt="" />
+                <img class="pf" src="./src/images/pf/alder.png" alt="" />
+                <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="mpf" src="./src/images/pf/steven.png" alt="" />
+                <img class="mpf" src="./src/images/pf/lance.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/ssmorty.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssgiovanni.png" alt="" />
+                <img class="la" src="./src/images/pf/n.png" alt="" />
+                <img class="la" src="./src/images/pf/gloria.png" alt="" />
+                <img class="la" src="./src/images/pf/sscynthia.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/sshau.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssmina.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssacerola.png" alt="" />
+                <img class="pf" src="./src/images/pf/sslana.png" alt="" />
+                <img class="la" src="./src/images/pf/ssred.png" alt="" />
+                <img class="la" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="la" src="./src/images/pf/alder.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/ssrcynthia.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Jun" class="tabcontent">
           <h2>June</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/steven.png" alt="" />
-          <h3>2021</h3>
-          <img class="mf" src="./src/images/mf/maxie.png" alt="" />
-          <img class="mf" src="./src/images/mf/archie.png" alt="" />
-          <h3>2022</h3>
-          <img class="mf" src="./src/images/mf/ssethan.png" alt="" />
-          <img class="mf" src="./src/images/mf/sslyra.png" alt="" />
-          <img class="mf" src="./src/images/mf/sskris.png" alt="" />
-          <img class="pf" src="./src/images/pf/bede.png" alt="" />
-          <img class="mpf" src="./src/images/pf/redsnorlax.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lucas.png" alt="" />
-          <img class="mpf" src="./src/images/pf/gloria.png" alt="" />
-					<h3>2023</h3>
-					<img class="mf" src="./src/images/mf/adaman.png" alt="" />
-          <img class="mf" src="./src/images/mf/irida.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssmorty.png" alt="" />
-					<img class="pf" src="./src/images/pf/eusine.png" alt="" />
-					<img class="pf" src="./src/images/pf/sssilver.png" alt="" />
-					<img class="pf" src="./src/images/pf/ssmay.png" alt="" />
-					<img class="pf" src="./src/images/pf/ssn.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/archie.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/maxie.png" alt="" />
+                <img class="mf" src="./src/images/mf/archie.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/ssethan.png" alt="" />
+                <img class="mf" src="./src/images/mf/sslyra.png" alt="" />
+                <img class="mf" src="./src/images/mf/sskris.png" alt="" />
+                <img class="pf" src="./src/images/pf/bede.png" alt="" />
+                <img class="mpf" src="./src/images/pf/redsnorlax.png" alt="" />
+                <img class="mpf" src="./src/images/pf/lucas.png" alt="" />
+                <img class="mpf" src="./src/images/pf/gloria.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/adaman.png" alt="" />
+                <img class="mf" src="./src/images/mf/irida.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssmorty.png" alt="" />
+                <img class="pf" src="./src/images/pf/eusine.png" alt="" />
+                <img class="pf" src="./src/images/pf/sssilver.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssmay.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssn.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/archie.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Jul" class="tabcontent">
           <h2>July</h2>
-          <h3>2020</h3>
-          <h3>2021</h3>
-          <img class="pf" src="./src/images/pf/emmet.png" alt="" />
-          <img class="pf" src="./src/images/pf/ingo.png" alt="" />
-          <h3>2022</h3>
-          <img class="pf" src="./src/images/pf/gloriadojo.png" alt="" />
-          <img class="pf" src="./src/images/pf/sskorrina.png" alt="" />
-          <img class="mpf" src="./src/images/pf/emmet.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ingo.png" alt="" />
-          <img class="la" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="la" src="./src/images/pf/alder.png" alt="" />
-          <h5>Anime Collab Select Ticket Scout (F2P)</h5>
-          <img class="mpf" src="./src/images/pf/n.png" alt="" />
-          <img class="mpf" src="./src/images/pf/alder.png" alt="" />
-          <img class="mpf" src="./src/images/pf/gloria.png" alt="" />
-          <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
-          <img class="mpf" src="./src/images/pf/steven.png" alt="" />
-          <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="mpf" src="./src/images/pf/lance.png" alt="" />
-					<h3>2023</h3>
-          <img class="mpf" src="./src/images/pf/gloriadojo.png" alt="" />
-					<img class="mpf" src="./src/images/pf/sslysandre.png" alt="" />
-					<img class="pf" src="./src/images/pf/rose.png" alt="" />
-					<img class="pf" src="./src/images/pf/oleana.png" alt="" />
-					<img class="pf" src="./src/images/pf/sswally.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/maxie.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020*</h2></div>
+              <div class="accordion-content">
+                <h3>NOTHING...</h3>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/emmet.png" alt="" />
+                <img class="pf" src="./src/images/pf/ingo.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/gloriadojo.png" alt="" />
+                <img class="pf" src="./src/images/pf/sskorrina.png" alt="" />
+                <img class="mpf" src="./src/images/pf/emmet.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ingo.png" alt="" />
+                <img class="la" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="la" src="./src/images/pf/alder.png" alt="" />
+                <h5>Anime Collab Select Ticket Scout (F2P)</h5>
+                <img class="mpf" src="./src/images/pf/n.png" alt="" />
+                <img class="mpf" src="./src/images/pf/alder.png" alt="" />
+                <img class="mpf" src="./src/images/pf/gloria.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sscynthia.png" alt="" />
+                <img class="mpf" src="./src/images/pf/steven.png" alt="" />
+                <img class="mpf" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="mpf" src="./src/images/pf/lance.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="mpf" src="./src/images/pf/gloriadojo.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sslysandre.png" alt="" />
+                <img class="pf" src="./src/images/pf/rose.png" alt="" />
+                <img class="pf" src="./src/images/pf/oleana.png" alt="" />
+                <img class="pf" src="./src/images/pf/sswally.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/maxie.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
+          <h3>*NO NEW POKÉ FAIR AND/OR MASTER FAIR OR RERUN!</h3>
         </div>
 
         <div id="Ago" class="tabcontent">
           <h2>August</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/lance.png" alt="" />
-          <img class="pf" src="./src/images/pf/sscynthia.png" alt="" />
-          <h3>2021</h3>
-          <img class="pf" src="./src/images/pf/lear.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssleon.png" alt="" />
-          <img class="pf" src="./src/images/pf/gloria.png" alt="" />
-          <img class="pf" src="./src/images/pf/lysander.png" alt="" />
-          <h5>Kanto Trio for New Players</h5>
-          <img class="mpf" src="./src/images/pf/ssred.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssleaf.png" alt="" />
-          <h3>2022</h3>
-          <h5>1st Update</h5>
-          <img class="pf" src="./src/images/pf/ssmay.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssbrendan.png" alt="" />
-          <h5>2nd Update</h5>
-          <img class="pf" src="./src/images/pf/sssteven.png" alt="" />
-          <img class="mf" src="./src/images/mf/maxie.png" alt="" />
-          <img class="mf" src="./src/images/mf/archie.png" alt="" />
-					<h3>2023</h3>
-          <img class="pf" src="./src/images/pf/towerleon.png" alt="" />
-					<img class="pf" src="./src/images/pf/gymgloria.png" alt="" />
-					<img class="pf" src="./src/images/pf/nemona.png" alt="" />
-					<img class="la" src="./src/images/pf/diantha.png" alt="" />
-          <img class="la" src="./src/images/pf/ingo.png" alt="" />
-          <img class="la" src="./src/images/pf/redsnorlax.png" alt="" />
-          <img class="mf" src="./src/images/mf/sskris.png" alt="" />
-					<img class="mf" src="./src/images/mf/sslyra.png" alt="" />
-					<img class="mf" src="./src/images/mf/ssethan.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/lance.png" alt="" />
+                <img class="pf" src="./src/images/pf/sscynthia.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/lear.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssleon.png" alt="" />
+                <img class="pf" src="./src/images/pf/gloria.png" alt="" />
+                <img class="pf" src="./src/images/pf/lysander.png" alt="" />
+                <h5>Kanto Trio for New Players</h5>
+                <img class="mpf" src="./src/images/pf/ssred.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssleaf.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <h5>1st Update</h5>
+                <img class="pf" src="./src/images/pf/ssmay.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssbrendan.png" alt="" />
+                <h5>2nd Update</h5>
+                <img class="pf" src="./src/images/pf/sssteven.png" alt="" />
+                <img class="mf" src="./src/images/mf/maxie.png" alt="" />
+                <img class="mf" src="./src/images/mf/archie.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/towerleon.png" alt="" />
+                <img class="pf" src="./src/images/pf/gymgloria.png" alt="" />
+                <img class="pf" src="./src/images/pf/nemona.png" alt="" />
+                <img class="la" src="./src/images/pf/diantha.png" alt="" />
+                <img class="la" src="./src/images/pf/ingo.png" alt="" />
+                <img class="la" src="./src/images/pf/redsnorlax.png" alt="" />
+                <img class="mf" src="./src/images/mf/sskris.png" alt="" />
+                <img class="mf" src="./src/images/mf/sslyra.png" alt="" />
+                <img class="mf" src="./src/images/mf/ssethan.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Set" class="tabcontent">
           <h2>September</h2>
-          <h3>2020 - 1st Year</h3>
-          <img class="pf" src="./src/images/pf/ssred.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssleaf.png" alt="" />
-          <h3>2021 - 2nd Year</h3>
-          <h5>1st Update</h5>
-          <img class="mf" src="./src/images/mf/lillieanni21.png" alt="" />
-          <img class="mf" src="./src/images/mf/nanni21.png" alt="" />
-          <img class="mf" src="./src/images/mf/stevenanni21.png" alt="" />
-          <h5>2nd Update</h5>
-          <img class="pf" src="./src/images/pf/redsnorlax.png" alt="" />
-          <img class="pf" src="./src/images/pf/blueclassic.png" alt="" />
-          <img class="pf" src="./src/images/pf/marnie.png" alt="" />
-          <h3>2022 - 3th Year</h3>
-          <img class="mf" src="./src/images/mf/ash.png" alt="" />
-          <img class="mf" src="./src/images/mf/ssacynthia.png" alt="" />
-          <img class="mf" src="./src/images/mf/sstred.png" alt="" />
-          <img class="pf" src="./src/images/pf/lear.png" alt="" />
-          <img class="la" src="./src/images/pf/ssred.png" alt="" />
-          <img class="la" src="./src/images/pf/alder.png" alt="" />
-          <img class="la" src="./src/images/pf/sscynthia.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-					<h3>2023 - 4th Year</h3>
-					<img class="mf" src="./src/images/mf/neochampred.png" alt="" />
-					<img class="mf" src="./src/images/mf/neochampleaf.png" alt="" />
-					<img class="mf" src="./src/images/mf/neochampblue.png" alt="" />
-					<img class="pf" src="./src/images/pf/paulo.png" alt="" />
-					<img class="pf" src="./src/images/pf/elesaclassic.png" alt="" />
-					<img class="pf" src="./src/images/pf/palmer.png" alt="" />
-					<img class="pf" src="./src/images/pf/argenta.png" alt="" />
-					<img class="pf" src="./src/images/pf/bede.png" alt="" />
-					<h5>Fair-Exclusive 5 ★ Select Ticket Scout (F2P)</h5>
-					<img class="mpf" src="./src/images/pf/n.png" alt="" />
-          <img class="mpf" src="./src/images/pf/marnie.png" alt="" />
-          <img class="mpf" src="./src/images/pf/raihan.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/ssserena.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/gloria.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020 - 1ST YEAR</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/ssred.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssleaf.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021 - 2ND YEAR</h2></div>
+              <div class="accordion-content">
+                <h5>1st Update</h5>
+                <img class="mf" src="./src/images/mf/lillieanni21.png" alt="" />
+                <img class="mf" src="./src/images/mf/nanni21.png" alt="" />
+                <img class="mf" src="./src/images/mf/stevenanni21.png" alt="" />
+                <h5>2nd Update</h5>
+                <img class="pf" src="./src/images/pf/redsnorlax.png" alt="" />
+                <img class="pf" src="./src/images/pf/blueclassic.png" alt="" />
+                <img class="pf" src="./src/images/pf/marnie.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022 - 3RD YEAR</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/ash.png" alt="" />
+                <img class="mf" src="./src/images/mf/ssacynthia.png" alt="" />
+                <img class="mf" src="./src/images/mf/sstred.png" alt="" />
+                <img class="pf" src="./src/images/pf/lear.png" alt="" />
+                <img class="la" src="./src/images/pf/ssred.png" alt="" />
+                <img class="la" src="./src/images/pf/alder.png" alt="" />
+                <img class="la" src="./src/images/pf/sscynthia.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023 - 4TH YEAR</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/neochampred.png" alt="" />
+                <img class="mf" src="./src/images/mf/neochampleaf.png" alt="" />
+                <img class="mf" src="./src/images/mf/neochampblue.png" alt="" />
+                <img class="pf" src="./src/images/pf/paulo.png" alt="" />
+                <img class="pf" src="./src/images/pf/elesaclassic.png" alt="" />
+                <img class="pf" src="./src/images/pf/palmer.png" alt="" />
+                <img class="pf" src="./src/images/pf/argenta.png" alt="" />
+                <img class="pf" src="./src/images/pf/bede.png" alt="" />
+                <h5>Fair-Exclusive 5 ★ Select Ticket Scout (F2P)</h5>
+                <img class="mpf" src="./src/images/pf/n.png" alt="" />
+                <img class="mpf" src="./src/images/pf/marnie.png" alt="" />
+                <img class="mpf" src="./src/images/pf/raihan.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/ssserena.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/gloria.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024 - 5TH YEAR</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Out" class="tabcontent">
           <h2>October</h2>
-          <h3>2020</h3>
-          <h3>2021</h3>
-          <h3>2022</h3>
-          <img class="pf" src="./src/images/pf/sswally.png" alt="" />
-          <img class="pf" src="./src/images/pf/victor.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-					<h3>2023</h3>
-					<img class="pf" src="./src/images/pf/akari.png" alt="" />
-					<img class="pf" src="./src/images/pf/rei.png" alt="" />
-					<img class="la" src="./src/images/pf/sshau.png" alt="" />
-          <img class="la" src="./src/images/pf/redsnorlax.png" alt="" />
-          <img class="la" src="./src/images/pf/lance.png" alt="" />
-					<img class="mpf" src="./src/images/pf/sshilda.png" alt="" />
-          <img class="mpf" src="./src/images/pf/sshilbert.png" alt="" />
-					<img class="mpf" src="./src/images/pf/ssn.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/champcalem.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/steven.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020*</h2></div>
+              <div class="accordion-content">
+                <h3>NOTHING...</h3>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021*</h2></div>
+              <div class="accordion-content">
+                <h3>NOTHING...</h3>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/sswally.png" alt="" />
+                <img class="pf" src="./src/images/pf/victor.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/akari.png" alt="" />
+                <img class="pf" src="./src/images/pf/rei.png" alt="" />
+                <img class="la" src="./src/images/pf/sshau.png" alt="" />
+                <img class="la" src="./src/images/pf/redsnorlax.png" alt="" />
+                <img class="la" src="./src/images/pf/lance.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sshilda.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sshilbert.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssn.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/champcalem.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/steven.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
+
+          <h3>*NO NEW POKÉ FAIR AND/OR MASTER FAIR OR RERUN!</h3>
         </div>
 
         <div id="Nov" class="tabcontent">
           <h2>November</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/alder.png" alt="" />
-          <img class="pf" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="pf" src="./src/images/pf/steven.png" alt="" />
-          <h3>2021</h3>
-          <img class="mpf" src="./src/images/pf/diantha.png" alt="" />
-          <img class="mpf" src="./src/images/pf/championiris.png" alt="" />
-          <h3>2022</h3>
-          <img class="pf" src="./src/images/pf/sshilda.png" alt="" />
-          <img class="pf" src="./src/images/pf/sshilbert.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssn.png" alt="" />
-          <img class="la" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="la" src="./src/images/pf/lysander.png" alt="" />
-          <img class="la" src="./src/images/pf/marnie.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-					<h3>2023</h3>
-					<img class="pf" src="./src/images/pf/ssroxie.png" alt="" />
-					<img class="pf" src="./src/images/pf/sspiers.png" alt="" />
-					<img class="pf" src="./src/images/pf/championiris.png" alt="" />
-					<img class="mpf" src="./src/images/pf/ssmorty.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssmay.png" alt="" />
-					<img class="pf" src="./src/images/pf/penny.png" alt="" />
-					<img class="pf" src="./src/images/pf/elaine.png" alt="" />
-					<img class="mpf" src="./src/images/pf/ssdiantha.png" alt="" />
-          <img class="mpf" src="./src/images/pf/anabel.png" alt="" />
-					<h5>Pokémon Masters Day - Master Fair Rerun</h5>
-          <img class="mf" src="./src/images/mf/champserena.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/alder.png" alt="" />
+                <img class="pf" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="pf" src="./src/images/pf/steven.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="mpf" src="./src/images/pf/diantha.png" alt="" />
+                <img
+                  class="mpf"
+                  src="./src/images/pf/championiris.png"
+                  alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/sshilda.png" alt="" />
+                <img class="pf" src="./src/images/pf/sshilbert.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssn.png" alt="" />
+                <img class="la" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="la" src="./src/images/pf/lysander.png" alt="" />
+                <img class="la" src="./src/images/pf/marnie.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/ssroxie.png" alt="" />
+                <img class="pf" src="./src/images/pf/sspiers.png" alt="" />
+                <img class="pf" src="./src/images/pf/championiris.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssmorty.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssmay.png" alt="" />
+                <img class="pf" src="./src/images/pf/penny.png" alt="" />
+                <img class="pf" src="./src/images/pf/elaine.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssdiantha.png" alt="" />
+                <img class="mpf" src="./src/images/pf/anabel.png" alt="" />
+                <h5>Pokémon Masters Day - Master Fair Rerun</h5>
+                <img class="mf" src="./src/images/mf/champserena.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="Dez" class="tabcontent">
           <h2>December</h2>
-          <h3>2020</h3>
-          <img class="pf" src="./src/images/pf/gloria.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssred.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssblue.png" alt="" />
-          <img class="mpf" src="./src/images/pf/ssleaf.png" alt="" />
-          <h3>2021</h3>
-          <img class="mf" src="./src/images/mf/sslusamine.png" alt="" />
-          <img class="pf" src="./src/images/pf/elesaclassic.png" alt="" />
-          <h3>2022</h3>
-          <img class="mf" src="./src/images/mf/champserena.png" alt="" />
-          <img class="mf" src="./src/images/mf/champcalem.png" alt="" />
-          <img class="pf" src="./src/images/pf/ssleaf.png" alt="" />
-          <img class="mf" src="./src/images/mf/lillieanni21.png" alt="" />
-          <img class="mf" src="./src/images/mf/nanni21.png" alt="" />
-          <img class="mf" src="./src/images/mf/stevenanni21.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-					<h3>2023</h3>
-					<img class="mf" src="./src/images/mf/neochampnate.png" alt="" />
-					<img class="mpf" src="./src/images/pf/ssacerola.png" alt="" />
-          <img class="mpf" src="./src/images/pf/sslana.png" alt="" />
-					<img class="mpf" src="./src/images/pf/ssmina.png" alt="" />
-					<img class="la" src="./src/images/pf/sskorrina.png" alt="" />
-					<img class="la" src="./src/images/pf/emma.png" alt="" />
-					<img class="la" src="./src/images/pf/ssblue.png" alt="" />
-					<img class="mf" src="./src/images/mf/neochamprosa.png" alt="" />
-          <h5>Monthly Poké Fair</h5>
-          <img class="tlm" src="./src/images/pf/marnie.png" alt="" />
-          <img class="tls" src="./src/images/pf/n.png" alt="" />
-          <img class="tls" src="./src/images/pf/raihan.png" alt="" />
-          <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
-          <img class="tls" src="./src/images/pf/steven.png" alt="" />
-          <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2020</h2></div>
+              <div class="accordion-content">
+                <img class="pf" src="./src/images/pf/gloria.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssred.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssleaf.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2021</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/sslusamine.png" alt="" />
+                <img class="pf" src="./src/images/pf/elesaclassic.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2022</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/champserena.png" alt="" />
+                <img class="mf" src="./src/images/mf/champcalem.png" alt="" />
+                <img class="pf" src="./src/images/pf/ssleaf.png" alt="" />
+                <img class="mf" src="./src/images/mf/lillieanni21.png" alt="" />
+                <img class="mf" src="./src/images/mf/nanni21.png" alt="" />
+                <img class="mf" src="./src/images/mf/stevenanni21.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2023</h2></div>
+              <div class="accordion-content">
+                <img class="mf" src="./src/images/mf/neochampnate.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssacerola.png" alt="" />
+                <img class="mpf" src="./src/images/pf/sslana.png" alt="" />
+                <img class="mpf" src="./src/images/pf/ssmina.png" alt="" />
+                <img class="la" src="./src/images/pf/sskorrina.png" alt="" />
+                <img class="la" src="./src/images/pf/emma.png" alt="" />
+                <img class="la" src="./src/images/pf/ssblue.png" alt="" />
+                <img class="mf" src="./src/images/mf/neochamprosa.png" alt="" />
+                <h5>Monthly Poké Fair</h5>
+                <img class="tlm" src="./src/images/pf/marnie.png" alt="" />
+                <img class="tls" src="./src/images/pf/n.png" alt="" />
+                <img class="tls" src="./src/images/pf/raihan.png" alt="" />
+                <img class="tls" src="./src/images/pf/cynthia.png" alt="" />
+                <img class="tls" src="./src/images/pf/steven.png" alt="" />
+                <img class="tls" src="./src/images/pf/gloria.png" alt="" />
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header"><h2>2024</h2></div>
+              <div class="accordion-content">
+                <h3>COMING SOON...</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/accordion.js"></script>
   </body>
 </html>
